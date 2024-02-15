@@ -1,1 +1,38 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Game Suite</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>AI Game Suite</h1>
+        <button onclick="location.href='minesweeper.html'">Play Minesweeper</button>
+        <button onclick="location.href='chess.html'" disabled>Play Chess</button>
+        <button onclick="location.href='checkers.html'" disabled>Play Checkers</button>
+        <button onclick="location.href='mancala.html'" disabled>Play Mancala</button>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>
