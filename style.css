@@ -1,1 +1,21 @@
+/* Existing styles */
+#minesweeper {
+    display: grid;
+    grid-template-columns: repeat(10, 30px); /* Adjust based on your grid size */
+    grid-gap: 1px;
+    margin: auto;
+}
 
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #8e8e8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell.uncovered {
+    background-color: #d9d9d9;
+}
